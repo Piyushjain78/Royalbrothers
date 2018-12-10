@@ -1,3 +1,12 @@
+
+for code plz go to Royalbrothers/src/app/app.component.html and see also css and ts file also.
+
+
+
+
+
+
+
 # Royalbrothers
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
