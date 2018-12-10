@@ -1,20 +1,375 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+    <div id="mynav" class="sidenav">
+        <a  href="javascript:void(0)" class="closebtn" (click)="closed()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Tariff</a>
+        <a href="#">Package</a>
+        <a href="#">Earn with Royal Brothers</a>
+        <a href="#">Bike Tour</a>
+        <a href="#">Rides</a>
+        <a href="#">Sign up</a>
+        <a href="#">Log in</a>
+
+        <div class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">
+              More
+            </a>
+            <div style="background-color:#111;"class="dropdown-menu">
+              <a style="color:white;display: block;"class="dropdown-item" href="#">Blog</a>
+              <a style="color:white;display: block;" class="dropdown-item" href="#">Terms & Conditions</a>
+              <a style="color:white;display: block;"class="dropdown-item" href="#">FAQ</a>
+              <a style="color:white;display: block;"class="dropdown-item" href="#">About us</a>
+            </div>
+          </div>
+    </div>  
+
+
+<div style="background-color: rgb(245, 245, 245);" class="container-fluid p-0">
+  
+   <div class="img">
+   
+      <div style="background-color: gray;opacity: 0.6;text-align: right;">
+        <span class="pr-3"style="color:white;">Refer friends<i class="fas fa-phone fa-xs "></i></span>
+        <span style="color:rgb(255, 255, 255);">+91-9019595595</span>
+        <span style="color:white;"> / +91-7306747474</span>
+      </div>
+  
+      <nav style="opacity: 0.6;background-color: black;" class="navbar navbar-expand-lg pt-0 pd-0">
+      <a class="navbar-brand" href="#"><img src="../assets/rr4.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i style="background-color:white;" class="fas fa-bars fa-1x"(click)="opened()"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li  class="nav-item active">
+            <a  style="color: white;font-size: 16px;" class="nav-link " href="#">Royal<br>Brothers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a style="color: rgb(255, 255, 255);" class="nav-link dropdown-toggle pl-5 pt-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bikes
+            </a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto">
+                <li  class="nav-item active">
+                  <a  style="color: white;" class="nav-link pl-5 pt-4 " href="#"><span>Tariff</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a style="color: rgb(255, 255, 255);" class=" nav-link pl-5 pt-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Package
+                  </a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: rgb(255, 255, 255);" class="nav-link pl-5 pt-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Search
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a style="color: rgb(255, 255, 255);" class="nav-link dropdown-toggle pl-5 pt-4" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </a>
+                    <div style="background-color: black;" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item"href="#">Blog</a>
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item"href="#">Bike Tour</a>
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item"href="#">Rides</a>
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item"href="#">Earn with Royal Brothers</a>
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item" href="#">FAQ</a>
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item" href="#">Privacy Policy</a>
+                        <a style="color:rgb(209, 63, 63);display: block;" class="dropdown-item" href="#">Terms & Conditions</a>
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item"href="#">Partner with us</a>
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item"href="#">Reach us</a>
+                        <a style="color:rgb(209, 63, 63);display: block;"class="dropdown-item" href="#">About us</a>
+                    </div>
+                  </li>
+                
+                <li class="d-flex flex-row-reverse bd-highlight nav-item ml-5 mt-3"style="border: 1px solid #fff; height:40px;" >
+                    <span style="color: rgb(255, 255, 255);" class="nav-link pr-2 pt-2 btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Log in
+                    </span>
+                    <span class="pt-2" style="color:white;"> | </span>
+                    <span style="color: rgb(255, 255, 255);" class="nav-link pl-2 pt-2 btn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Sign up
+                    </span>
+                </li>      
+
+              </ul>
+        </form>
+      </div>
+      </nav>
+      <h1 style="color: gray;">.</h1>
+      <h1 style="color: gray;">.</h1>
+      <h1 style="color: gray;">.</h1>
+      <h1 style="color: gray;">.</h1>
+      <h1 style="color: gray;">.</h1>
+      <h1 style="color: gray;">.</h1>
+  </div>
+
+  <div style="margin-left:5%;margin-right:5%;" class="row pt-3 pd-5 pb-5">
+      <div class="col m3 pt-3 btn">
+          <div class="card back b">
+              <div class="card-body">
+                  <b><h2 class="card-title">40+</h2></b>
+                <p class="card-text">CITIES</p>
+              </div>
+          </div>
+      </div>
+      <div class="col m3 pt-3 btn">
+          <div class="card back b1">
+              <div class="card-body">
+                <b><h2 class="card-title">5M</h2></b>
+                <p class="card-text">KILOMETERS</p>
+              </div>
+          </div>
+      </div>
+      <div class="col m3 pt-3 btn">
+          <div class="card b back">
+              <div class="card-body">
+                  <b><h2 class="card-title">4.6<i class="fas fa-star fa-xs ml-1"></i></h2></b>
+                <span style="font-size: 14px;" class="card-text">ON FACEBOOK</span>
+              </div>
+          </div>
+      </div>
+      <div class="col m3 pt-3 btn">
+          <div class="card back b1">
+              <div class="card-body">
+                  <b><h2 class="card-title">4.5<i class="fas fa-star fa-xs ml-1"></i></h2></b>
+                <p class="card-text">ON GOOGLE</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!--  OUR SPECIALITY  -->
+
+  <div style="background-color: white;">
+   <b><h4 class="pt-3 pb-4" style="text-align: center;font-family: Times New Roman;">OUR SPECIALITY</h4></b> 
+   <div style="background-color: white;margin-left:5%;margin-right:5%;" class="row">
+    <div class="col-md-3 mb-3 mx-auto">
+        <div style="font-family:Montserrat;font-weight: 900;" class="d-flex flex-row col m8">
+            <div class="pr-4"><h1 style="font-size: 60px;color:#fecc00;"><b>1</b></h1></div>
+            <div style="font-size: 19px;" class="pt-2">First RTO Authorized bike rental</div>
+        </div>
+      <div style="text-align: justify;"class="col m8">
+        <span>Pioneers in renting out bikes legally in Karnataka.</span>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3 mx-auto">
+        <div style="font-family:Montserrat;font-weight: 900;" class="d-flex flex-row col m8">
+            <div class="pr-4"><h1 style="font-size: 60px;color:#fecc00;"><b>2</b></h1></div>
+            <div style="font-size: 19px;" class="pt-2">Bikes in top notch conditions</div>
+        </div>
+      <div style="text-align: justify;"class="col m8">
+        <span>Each bike is cleaned and serviced weekly and also once before renting out.</span>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3 mx-auto">
+        <div style="font-family:Montserrat;font-weight: 900;" class="d-flex flex-row col m8">
+            <div class="pr-4"><h1 style="font-size: 60px;color:#fecc00;"><b>3</b></h1></div>
+            <div style="font-size: 19px;" class="pt-2">Timely pick up and drop off</div>
+        </div>
+       <div style="text-align: justify;"class="col m8">
+        <span>if we delay even by 15 mins, rs25 on scooter and rs50 on bikes will be refunded.</span>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3 mx-auto">
+        <div style="font-family:Montserrat;font-weight: 900;" class="d-flex flex-row col m8">
+            <div class="pr-4"><h1 style="font-size: 60px;color:#fecc00;"><b>4</b></h1></div>
+            <div style="font-size: 19px;" class="pt-2">Home delivery on weekdays*</div>
+        </div>
+       <div style="text-align: justify;"class="col m8">
+        <span>Now avail our service and get the key to happiness at yout doorstep.</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="background-color: white;margin-left:5%;margin-right:5%;" class="row">
+    <div class="col-md-3 mb-3 mx-auto">
+        <div style="font-family:Montserrat;font-weight: 900;" class="d-flex flex-row col m8">
+            <div class="pr-4"><h1 style="font-size: 60px;color:#fecc00;"><b>5</b></h1></div>
+            <div style="font-size: 19px;" class="pt-2">Commercial Insurance is covered</div>
+        </div>
+      <div style="text-align: justify;"class="col m8">
+        <span>We have a valid commercial insurance for the rider, pillion and third party.</span>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3 mx-auto">
+        <div style="font-family:Montserrat;font-weight: 900;" class="d-flex flex-row col m8">
+            <div class="pr-4"><h1 style="font-size: 60px;color:#fecc00;"><b>6</b></h1></div>
+            <div style="font-size: 19px;" class="pt-2">Most trusted & transparent process</div>
+        </div>
+      <div style="text-align: justify;" class="col m8">
+        <span>We are upfront about the entire process of renting a bike from us.</span>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3 mx-auto">
+        <div style="font-family:Montserrat;font-weight: 900;" class="d-flex flex-row col m8">
+            <div class="pr-4"><h1 style="font-size: 60px;color:#fecc00;"><b>7</b></h1></div>
+            <div style="font-size: 19px;" class="pt-2">19 pickup locations in Banglore</div>
+        </div>
+      <div style="text-align: justify;" class="col m8">
+        <span>There are good chances you will find us in 3 KM radius from your radius.</span>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3 mx-auto">
+        <div style="font-family:Montserrat;font-weight: 900;" class="d-flex flex-row col m8">
+            <div class="pr-4"><h1 style="font-size: 60px;color:#fecc00;"><b>8</b></h1></div>
+            <div style="font-size: 19px;" class="pt-2">Choose from a wide variety of bikes</div>
+        </div>
+      <div style="text-align: justify;" class="col m8">
+        <span>Pick a bike that suits your need from scooters to superbikes.</span>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <!-- our fleet -->
+<div class="mt-4">
+  <h3 class="pb-4"style="text-align: center;">OUR FLEET</h3>
+
+  <div style="margin-left:5%;margin-right:5%;background-color: white;cursor: pointer;"class="row back1 mb-1">
+    <div class="col-md-3">
+      <p style="text-align: center;">Triumph Street Twin</p>
+      <img class="img-fluid"src="../assets/bike.png">
+    </div>
+    <div class="col-md-3">
+        <p style="text-align: center;">Benelli TNT 600 i</p>
+        <img class="img-fluid"src="../assets/bt.png">
+    </div>
+    <div class="col-md-3">
+        <p style="text-align: center;">Harley Davidson Iron 883</p>
+        <img class="img-fluid"src="../assets/hd.png">
+    </div>
+    <div class="col-md-3">
+        <p style="text-align: center;">Classic 350</p>
+        <img class="img-fluid"src="../assets/c3.png">
+    </div>
+  </div>
+
+  <div style="margin-left:5%;margin-right:5%;background-color: white;cursor: pointer;"class="row back1 mb-1">
+    <div class="col-md-3">
+      <p style="text-align: center;">Himalayan</p>
+      <img class="img-fluid"src="../assets/hm.png">
+    </div>
+    <div class="col-md-3">
+        <p style="text-align: center;">Dominar 400</p>
+        <img class="img-fluid"src="../assets/dom.png">
+    </div>
+    <div class="col-md-3">
+        <p style="text-align: center;">Avenger Cruise 220</p>
+        <img class="img-fluid"src="../assets/ac.png">
+    </div>
+    <div class="col-md-3">
+        <p style="text-align: center;">Activa</p>
+        <img class="img-fluid"src="../assets/act.png">
+    </div>
+  </div>
+
+  <div style="margin-left:5%;margin-right:5%;background-color: white;cursor: pointer;"class="row back">
+    <div class="col-md-3">
+        <p style="text-align: center;">Classic 350</p>
+      <img class="img-fluid"src="../assets/c35.png">
+    </div>
+    <div class="col-md-3">
+        <p style="text-align: center;">Yamaha FZ</p>
+        <img class="img-fluid"src="../assets/yz.png">
+    </div>
+    <div class="col-md-3">
+        <p style="text-align: center;">Duke 200</p>
+        <img class="img-fluid"src="../assets/duk.png">
+    </div>
+    <div class="col-md-3">
+        <p class="dropdown dropdown-toggle pt-5 mt-5"style="text-align: center;color:gray;"><b>See more</b></p>
+    </div>
+  </div>
+
+      <div style="margin-left:5%;margin-right:5%;cursor: pointer;"class="row">
+        
+         <div class="col m3 s6">
+             <img class="img-fluid"src="../assets/mg.png">
+         </div>
+         <div class="col m3 s6">
+             <img class="img-fluid"src="../assets/ti.png">
+         </div>
+         <div class="col m3 s6">
+              <img class="img-fluid"src="../assets/et.png">
+         </div>
+         <div class="col m3 s6">
+              <img class="img-fluid"src="../assets/h.png">
+         </div>
+      </div>
+</div>
+
+<!--Company  -->
+
+<div class="md-5 pd-5 pt-4" style="background-color: gray;">
+  <div style="margin-left:5%;margin-right:5%;" class="row">
+
+    <div class="col-md-5 d-flex flex-row">
+      <div class="col-md-4">
+         <img class="img-fluid" src="../assets/rb.png"/>
+      </div>   
+       <div class="col-md-1 pl-0 d-flex flex-column"> 
+         <h1 style="color: #fecc00;"><b>Royal</b></h1>
+         <h1 style="color: white;"><b>Brothers</b></h1>
+       </div>
+      </div>
+
+<!-- hidding in smaller device only -->
+
+    <div style="cursor:pointer;"class="d-none d-md-block d-lg-block d-xl-block pl-3 ml-2 col m2">
+       <h4 style="color: white;line-height:3rem;"><b>COMPANY</b></h4> 
+       <div style="line-height:0.8rem;"class=" pl-0 col m1 d-flex flex-column"> 
+          <p style="color: white;">FAQ</p>
+          <p style="color: white;">Privacy Policy</p>
+          <p style="color: white;">Terms & Conditions</p>
+       </div> 
+    </div>
+
+    <div style="cursor:pointer;"class="d-none d-md-block d-lg-block d-xl-block col m2 pl-5 ml-5">
+        <div style="line-height:0.8rem;"class="pl-0 pt-5 col m1 d-flex flex-column"> 
+            <p style="color: white;">Tariff</p>
+            <p style="color: white;">Partner with us</p>
+            <p style="color: white;">Reach Us</p>
+            <p style="color: white;">About Us</p>
+            <p style="color: white;">Sitemap</p>
+         </div> 
+    </div>
+
+    <div style="cursor:pointer;"class="d-none d-md-block d-lg-block d-xl-block col m3 ml-5">
+        <h4 style="color: white;line-height:3rem;"><b>FOLLOW</b></h4> 
+        <div style="line-height:0.8rem;"class="pl-0 col m1 d-flex flex-column"> 
+           <p style="color: white;">Facebook</p>
+           <p style="color: white;">Twitter</p>
+           <p style="color: white;">Twitter</p>
+           <p style="color: white;">Linkedin</p>
+        </div> 
+    </div>
+
+  </div>
+</div>
+
+</div>
+</body>
+</html>
